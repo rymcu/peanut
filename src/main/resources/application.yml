@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /peanut
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: d9d2j9w2
+    database: 1
+    timeout: 3000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1
+        max-idle: 500
+        min-idle: 0
+  resources:
+    add-mappings: true
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
